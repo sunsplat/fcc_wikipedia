@@ -11,6 +11,8 @@
         margin: 20px;
       }
     </style>
+    <script   src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
+    <script type="text/javascript" src="index.js"></script>
   </head>
 
   <body>
@@ -25,18 +27,13 @@
       <div class="row">
         <div class="col-md-8 col-md-offset-2 text-center">
             <i class="fa fa-search fa-5x btn btn-default" aria-hidden="true" onclick="showSearchBar()" id="icon"></i>
-  			    <input id="search-bar" type="text" class="form-control" placeholder="Search for..." style="display: none;">
-  			    </div><!-- /input-group -->
-    			</div>
+  			    <input id="search-bar" type="text" class="form-control" placeholder="Search for..." style="display: none;" onkeypress="return searching()">
+  			</div><!-- /input-group -->
+    	</div>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2 text-center" id="search-result">
     		</div>
     	</div>
-    <script>
-      
-      function showSearchBar() {
-        document.getElementById('icon').style.display = 'none';
-        document.getElementById('search-bar').style.display = 'inline';
-      }
-    </script>
   </body>
 </html>
 
