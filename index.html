@@ -11,7 +11,7 @@
         margin: 20px;
       }
     </style>
-    <script   src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
     <script type="text/javascript" src="index.js"></script>
   </head>
 
@@ -30,10 +30,8 @@
   			    <input id="search-bar" type="text" class="form-control" placeholder="Search for..." style="display: none;" onkeypress="return searching()">
   			</div><!-- /input-group -->
     	</div>
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2 text-center" id="search-result">
-    		</div>
-    	</div>
+      <h3 id="search-message" class="text-center"></h3>
+      <div class="row" id="search-result"></div>
   </body>
 </html>
 
