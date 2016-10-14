@@ -11,27 +11,31 @@
         margin: 20px;
       }
     </style>
-    <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="index.js"></script>
   </head>
 
   <body>
     <div class="main" style="margin: 20vh;">
-    	<div class="row">
-    		<div class="col-md-8 col-md-offset-2 text-center">
-    			<div class="btn-group-lg">
-    				<a href="https://en.wikipedia.org/wiki/Special:Random" class="btn btn-default" target="_blank">Click here to get a random article.</a></button>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2 text-center">
+          <div class="btn-group-lg">
+            <a href="https://en.wikipedia.org/wiki/Special:Random" class="btn btn-default" target="_blank">Click here to get a random article.</a></button>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-md-8 col-md-offset-2 text-center">
-            <i class="fa fa-search fa-5x btn btn-default" aria-hidden="true" onclick="showSearchBar()" id="icon"></i>
-  			    <input id="search-bar" type="text" class="form-control" placeholder="Search for..." style="display: none;" onkeypress="return searching()">
-  			</div><!-- /input-group -->
-    	</div>
+            <i class="fa fa-search fa-5x btn btn-default" aria-hidden="true" onclick="showSearchBar();" id="icon"></i>
+            <input id="search-bar" type="text" class="form-control" placeholder="Search for..." style="display: none; width: 50%;">
+          <input id="search-btn" type="button" value="Search" class="btn btn-warning" style="display: none;" onclick="searching();">
+        </div>
+      </div>
       <h3 id="search-message" class="text-center"></h3>
-      <div class="row" id="search-result"></div>
+      <div class="row" id="search-result">
+      </div>
   </body>
 </html>
+
+
 
