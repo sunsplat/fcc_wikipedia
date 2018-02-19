@@ -17,6 +17,7 @@ function searching() {
             title += "<div class='col-md-10 col-md-offset-1'><div>"+value+"</div></div></button></div>";
           }
       }); 
+      document.getElementById('search-message').style.display = 'block';
       document.getElementById('search-result').innerHTML = title;
       document.getElementById('search-message').innerHTML = 'Displaying top 20 results';
     }
